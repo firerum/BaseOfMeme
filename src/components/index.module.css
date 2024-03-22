@@ -8,8 +8,18 @@
 
 .bannerHeading {
   text-align: center;
+  font-size: 3rem;
 }
 
-/* span {
-  font-size: 2rem;
-} */
+.buyLink {
+  border: 1px solid;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.carouselMargin {
+  padding-top: 2rem;
+}

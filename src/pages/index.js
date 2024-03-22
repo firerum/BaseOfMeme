@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import Carousel from "../components/carousel"
 
 const IndexPage = () => (
   <Layout>
@@ -12,11 +13,13 @@ const IndexPage = () => (
       <div>
         <h1 className={styles.bannerHeading}>
           Welcome to <br></br>
-          <span className={{ color: "green" }}>
+          <span className={styles.title}>
             <b>Base of Meme</b>
           </span>
         </h1>
-        <a href="#">Buy</a>
+        <div className={styles.buyLink}>
+          <a href="#">Buy</a>
+        </div>
       </div>
       <StaticImage
         src="../images/bomemain.jpeg"
@@ -27,6 +30,9 @@ const IndexPage = () => (
         alt=""
         style={{ borderRadius: "100%" }}
       />
+    </div>
+    <div className={styles.carouselMargin}>
+      <Carousel />
     </div>
   </Layout>
 )

@@ -6,8 +6,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.7;
+  background-color: #1635a2;
+  color: #fff;
+  font-family: "Open Sans";
 }
 
 .container {
@@ -17,7 +24,11 @@ body {
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  /* width: 100%; */
+  color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+  color: #ffd701;
 }
 
 ul {
@@ -32,16 +43,15 @@ li {
 
 header {
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
 }
 
 header > div.logo-wrapper {
-  border: 1px solid red;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 header > div.menu-wrapper {

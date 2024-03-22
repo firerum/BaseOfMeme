@@ -6,7 +6,7 @@ const links = [
   { name: "home", href: "" },
   { name: "about", href: "" },
   { name: "tokenomics", href: "" },
-  { name: "socials", href: "" },
+  { name: "socials", href: "#socials" },
 ]
 
 const Header = ({ siteTitle }) => (
@@ -21,21 +21,13 @@ const Header = ({ siteTitle }) => (
         formats={["auto", "webp", "avif"]}
         alt="bome logo"
       />
-      <Link
-        to="/"
-        style={{
-          fontSize: `var(--font-sm)`,
-          textDecoration: `none`,
-        }}
-      >
-        {siteTitle}
-      </Link>
+      <Link to="/">{siteTitle}</Link>
     </div>
     <div className="menu-wrapper">
       <ul>
         {links.map((l, index) => (
           <li key={index}>
-            <a href={l.href}>{l.name}</a>
+            <Link to={l.href}>{l.name}</Link>
           </li>
         ))}
       </ul>

@@ -1,23 +1,42 @@
 .bannerContent {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 4rem;
-  border: 1px solid red;
 }
 
 .bannerHeading {
   text-align: center;
   font-size: 3rem;
+  line-height: 1.3;
 }
 
 .buyLink {
-  border: 1px solid;
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 4px;
   text-align: center;
+  padding-block: 0.5rem;
+  margin-top: 2rem;
 }
 
 .title {
   font-size: 4rem;
+  color: #1652f0;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  font-size: 2rem;
+}
+
+.list {
+  border: 2px dashed red;
+  padding: 0rem 2rem;
 }
 
 .carouselMargin {

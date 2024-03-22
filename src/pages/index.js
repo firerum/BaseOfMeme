@@ -8,28 +8,29 @@ import * as styles from "../components/index.module.css"
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
+    <div className={styles.bannerContent}>
+      <div>
+        <h1 className={styles.bannerHeading}>
+          Welcome to <br></br>
+          <span className={{ color: "green" }}>
+            <b>Base of Meme</b>
+          </span>
+        </h1>
+        <a href="#">Buy</a>
+      </div>
       <StaticImage
-        src="../images/example.png"
+        src="../images/bomemain.jpeg"
         loading="eager"
-        width={64}
+        width={400}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
-        style={{ marginBottom: `var(--space-3)` }}
+        style={{ borderRadius: "100%" }}
       />
-      <h1>
-        Welcome to <b>Base of Meme</b>
-      </h1>
     </div>
   </Layout>
 )
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage

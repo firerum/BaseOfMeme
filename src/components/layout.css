@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --border-radius: 4px;
   --color-text: #333;
   --color-primary: #7026b9;
@@ -221,4 +221,50 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+} */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  paddding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+header {
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+header > div.logo-wrapper {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header > div.menu-wrapper {
+  border: 1px solid red;
+  align-items: center;
 }
